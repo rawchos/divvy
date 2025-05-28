@@ -1,0 +1,14 @@
+[workspace]
+resolver = "2"
+
+members = [
+    "runner",
+    "cli"
+]
+
+[workspace.lints.clippy]
+unwrap_used = "deny"
+
+[workspace.dependencies]
+clap = { version = "4.5.37", features = ["derive"] }
+rust_decimal = { version = "1.37", features = ["macros"] }
